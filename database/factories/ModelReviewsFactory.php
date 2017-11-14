@@ -6,7 +6,7 @@ use App\Model\Products;
 $factory->define(App\Model\Reviews::class, function (Faker $faker) {
     return [
         //
-        'product_id'=> function(){
+        'products_id'=> function(){
             return Products::all()->random();
         },
         'customer'=>$faker->name,
