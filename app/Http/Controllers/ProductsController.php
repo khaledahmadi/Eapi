@@ -46,11 +46,11 @@ class ProductsController extends Controller
      * @param  \App\Model\Products  $products
      * @return \Illuminate\Http\Response
      */
-    public function show(Products $products)
+    public function show($products)
     {  
         //return $products;
-        //return Products::find($products);
-        return new ProductResource($products);
+        return Products::find($products);
+        //return new ProductResource($products);
     }
 
     /**
@@ -86,4 +86,5 @@ class ProductsController extends Controller
     {
         //
     }
+
 }
