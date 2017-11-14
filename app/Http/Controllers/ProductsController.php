@@ -47,10 +47,10 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Products $products)
-    {
-        $product=Products::find($products);
-        return $product;
-        //return new ProductResource($products);
+    {  
+        //return $products;
+        //return Products::find($products);
+        return new ProductResource($products);
     }
 
     /**

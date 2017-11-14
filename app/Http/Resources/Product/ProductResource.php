@@ -15,7 +15,7 @@ class ProductResource extends Resource
     public function toArray($request)
     {
         return [
-            'Product Name'=>$this->name,
+            'ProductName'=>$this->name,
             'Description'=>$this->details,
             'Price'=> $this->price,
             'Stock'=>$this->stock,
